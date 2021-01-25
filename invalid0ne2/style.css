@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    background-color: black;
+}
+
+/* formatting and adding fonts */
+@font-face{
+  src: url(fonts/d3dig.ttf);
+  font-family: d3dig;
+}
+@font-face {
+  src: url(fonts/digfireb.ttf);
+  font-family: digfireb;
+}
+@font-face {
+  src: url(fonts/wwDigital.ttf);
+  font-family: wwdig;
+}
+@font-face {
+  src: url(fonts/MHbody.ttf);
+  font-family: MHbody;
+}
+@font-face {
+  src: url(fonts/digcoll.ttf);
+  font-family: digcoll;
+}
+@font-face{
+    src: url(fonts/apr.ttf);
+    font-family: sumstyle;
+}
+
+/* formatting the navigation fo the site*/
+#nav-bar{
+    background-color: #111;
+    height: fit-content;
+}
+.dropdown-menu{
+    background-color: #111;
+    border: 1px solid red;
+}
+.navbar-brand{
+  font-family: wwdig;
+  font-size: 50px;
+  color: #61F08E;
+}
+.navbar-brand:hover{
+ text-shadow: 2px 2px 8px red;
+}
+#nav-bar ul li a{
+     font-family: wwdig;
+  font-size: 17px;
+  color: #61F08E;
+  display: block;
+    border-right: 1px solid #61F08E;
+
+}
+.dropdown-item{
+    font-family: wwdig;
+    color: #61F08E;
+}
+.dropdown-item:hover{
+    color: red;
+    background-color: #111;
+}
+/*formatting the banner and header of the site*/
+#header{
+    
+}
+
+.head-banner{
+  width: 100%;
+  height: calc(100vh);
+  background-image: url('images/site-banner.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+.vert-cent{
+      display: table-cell;
+  vertical-align: middle;
+}
+.head-banner h2{
+  font-family: digcoll;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #61F08E;
+  line-height: 100px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

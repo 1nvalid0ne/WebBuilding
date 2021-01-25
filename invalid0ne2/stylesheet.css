@@ -1,0 +1,671 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    color: black;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* my formatting */
+/* ----------------------tablet website is still broken so i'll have to patch that------------------------------ */
+:root{
+  --transition: all .40s ease-in-out;
+}
+*{
+  text-decoration: none;
+}
+* li a:hover{
+  text-decoration: underline;
+}
+/* setting page background color as black */
+html{
+  background-color: black;
+}
+.wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+.wrapper-sequel{
+  width: 60%;
+  margin: 0 auto;
+}
+main{
+  padding-top: 125px;
+}
+/* formatting and adding fonts */
+@font-face{
+  src: url(fonts/d3dig.ttf);
+  font-family: d3dig;
+}
+@font-face {
+  src: url(fonts/digfireb.ttf);
+  font-family: digfireb;
+}
+@font-face {
+  src: url(fonts/wwDigital.ttf);
+  font-family: wwdig;
+}
+@font-face {
+  src: url(fonts/MHbody.ttf);
+  font-family: MHbody;
+}
+@font-face {
+  src: url(fonts/digcoll.ttf);
+  font-family: digcoll;
+}
+@font-face{
+    src: url(fonts/apr.ttf);
+    font-family: sumstyle;
+}
+        /* desktop formatting */
+        @media only screen and (min-width: 1000px){
+          * a:hover{
+            color: red;
+          }
+          .wrapper-sequel{
+            width: 50%;
+            margin: 0 auto;
+          }
+            header .header-brand{
+              text-align: center
+            }
+            header nav ul li{
+              padding-top: 10px;
+              position: relative;
+            }
+            header nav ul li ul{
+              padding-left: 20px;
+              padding: 2px;
+              display: none;
+              position: absolute;
+              padding: 8px;
+              background-color: #111;
+              border-radius:0px 0px 4px 4px;
+            }
+            header nav ul li:hover ul {
+              display: block;
+              margin: 0 auto;
+            }
+            header nav ul li ul li{
+              width: 100px;
+              padding: inherit;
+            }
+            header nav ul li ul li a{
+              padding: 6px;
+            }
+            header .header-brand:hover{
+              text-shadow: 2px 2px 8px red;
+            }
+            header .header-link{
+              display: block;
+              font-family: wwdig;
+              font-size: 25px;
+              color: #61F08E;
+              float:right;
+              padding-right: 35px;
+              padding-bottom: 15px;
+            }
+            header .header-link:hover{
+              text-shadow: 2px 2px 8px red;
+
+            }
+            .index-banner{
+              height: 400px;
+            }
+            .index-boxlinks div{
+              margin: 16px 16px 10px;
+              height: 220px;
+              background-color: #111;
+              float: left;
+              border: 2px solid #61F08E;
+              padding-left: 47px;
+            }
+            .index-bl-1{
+              width: calc(45% - 20px) !important;
+            }
+            .index-bl-2{
+              width: calc(45% - 20px) !important;
+            }
+            .index-boxlinks div h3:hover{
+              text-shadow: 2px 2px 8px red;
+            }
+            .footer-m2{
+              display: block;
+              font-family: wwdig;
+              font-size: 15px;
+              color: #61F08E;
+              float: left;
+              padding-left: 30px;
+            }
+            .footer-m2-head{
+              font-size: 20px;
+              border-bottom: 1px solid #61F08E;
+              text-align: center;
+            }
+            p{
+              font-size: 27px !important;
+              line-height: 25px;
+              width:auto;
+            }
+            h2{
+              font-size: 37px !important;
+
+            }
+            .contact-text p{
+              font-size: 32px !important;
+            }
+            .back-header{
+              font-family: wwdig;
+              font-size: 17px;
+              color: #61F08E;
+              display: block;
+              margin: -2px auto;
+            }
+            .back-header:hover{
+              text-decoration: underline;
+              color: red;
+            }
+            .gallery-img a img:hover{
+              border: 2px solid red;
+            }
+            .contact-form{
+              text-align: center;
+              text-decoration: none !important;
+            }
+            .contact-form a{
+              font-size: 30px;
+            }
+        }
+        /* end of desktop formatting */
+          /* format for smaller desktop screens   */
+          @media only screen and (max-width: 1400px){
+              .footer-special{
+                  position: relative !important;
+                  bottom: 0;
+              }
+              .archive-links div{
+                    width: calc(186px + 10%) !important;
+              }
+          }
+          /* end of desktop formatting #2 */
+/* formatting the menus */
+header{
+  background-color: #111;
+  width: 100%;
+  height: 125px;
+  border-bottom: 2px solid #61F08E;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+header .header-brand{
+  font-family: wwdig;
+  font-size: 60px;
+  color: #61F08E;
+  padding: 12px 80px;
+  margin: 0 20px;
+  display: block;
+}
+        /* start of mobile config */
+          @media only screen and (max-width: 900px){
+        header .header-link{
+          display:none;
+        }
+        .footer-m2{
+          display: none;
+        }
+        header .header-brand{
+          font-size: 45px;
+          padding: 20px 60px;
+          text-align: center;
+        }
+        header nav ul{
+          width: 100%;
+        }
+        header nav ul li{
+          margin: 0 auto;
+          position: relative;
+        }
+        header nav ul li ul{
+          padding-left: 20px;
+          padding: 2px;
+          display: none;
+          position: absolute;
+          padding: 8px;
+          background-color: #111;
+          border-radius:0px 0px 4px 4px;
+        }
+        header nav ul li:focus ul {
+          display: block;
+          margin: 0 auto;
+        }
+        header nav ul li ul li{
+          width: 100px;
+          padding: inherit;
+        }
+        header nav ul li ul li a{
+          padding: 6px;
+        }
+        .back-header{
+          display: none;
+        }
+        .gallery-img a img{
+          width: 100px !important;
+        }
+        .archives li{
+          line-height: 25px !important;
+        }
+        textarea{
+          width: 20%;
+        }
+/*        .contact-
+        border-right: 1px solid #61F08E;form
+          display: none;
+        }*/
+        .footer-special{
+          position: relative !important;
+          bottom: 0;
+        }
+        .status-main{
+        }
+        .wrapper-sequel{
+          width: 40%;
+          margin: 0 auto;
+        }
+        /*end of mobile config*/                          }
+header nav ul{
+  display: block;
+  margin: 0px 60px;
+  width: fit-content;
+}
+header nav ul li{
+  float:left;
+  list-style: none;
+  display: inline-block;
+  padding: 0px 16px;
+  border-right: 1px solid #61F08E;
+}
+header nav ul li a{
+  font-family: wwdig;
+  font-size: 17px;
+  color: #61F08E;
+  display: block;
+}
+/* coding the banner  (index)*/
+.index-banner{
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-image: url('images/site-banner.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+.vert-cent {
+  display: table-cell;
+  vertical-align: middle;
+}
+.index-banner h2{
+  font-family: digcoll;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #61F08E;
+  line-height: 100px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* designing and formatting the box links (bl) */
+.index-boxlinks{
+}
+.index-boxlinks div{
+  margin: 16px 16px 10px;
+  width: calc(100vw - 32px);
+  height: 100px;
+  background-color: #111;
+}
+.index-boxlinks div h3{
+  color: #61F08E;
+  font-family: d3dig;
+  font-style: italic;
+  font-size: 28px;
+  text-align: center;
+  line-height: 100px;
+  text-transform: uppercase;
+
+}
+/* styling text inside the website */
+main h2{
+  font-family: wwdig;
+  font-style: italic;
+  color: #61F08E;
+  display: block;
+  font-size: 28px;
+  text-decoration: underline;
+}
+/* styling the gallery view of the image page */
+.gallery-head{
+  padding: 20px 0px;
+}
+.gallery-img{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 0;
+  justify-content: center;
+}
+.gallery-img a{
+  float: left;
+}
+.gallery-img a img{
+  width: 150px;
+  padding: 10px 10px;
+  margin: 20px 20px 0;
+  border: 2px solid #61F08E;
+}
+.archives-gall{
+  padding: 25px 25px;
+}
+p{
+  padding-top: 10px;
+  font-family: MHbody, sumstyle;
+  color: #C3C9D6;
+  text-indent: 20px;
+  font-size: 18px;
+  /* use column-count: #; and column-gap: 20px; */
+}
+.empty{
+  text-align: center;
+  font-size: 28px !important;
+}
+.credit{
+  color: #61F08E;
+}
+.about-main{
+  padding: 150px 0;
+}
+/* contact page banner formatting */
+/* coding the banner  (contact page)*/
+.contact-banner{
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-image: url('images/contact-banner.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+
+}
+.vert-cent {
+  display: table-cell;
+  vertical-align: middle;
+}
+.contact-banner h2{
+  font-family: digcoll;
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #61F08E;
+  line-height: 100px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* formatting the text of the contact page  */
+.contact-text p{
+  font-size: 25px;
+  text-decoration: underline;
+  padding: 35px 0px;
+}
+.contact-main h2 {
+  padding: 50px 0 50px 0;
+}
+.status-main{
+  padding: 200px 500px;
+}
+main div a{
+  font-family: wwdig;
+  font-size: 20px;
+  color: #61F08E;
+  display: block;
+}
+/* styling the archive page */
+.archive-links{
+  overflow-x: hidden;
+  margin-bottom: 20px;
+}
+.archive-links div{
+  /* 280px is normal size */
+  width: calc(186px + 20%);
+  float: left;
+  height: 186px;
+  border: 2px solid #61F08E;
+  margin: 20px 10px 0px;
+  background-color: #111;
+  display:inline-block;
+}
+.archive-links h3 a{
+  color: #61F08E;
+  font-family: d3dig !important;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 186px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display:block;
+  text-align: center;
+}
+  .archive-links h3:hover{
+    text-shadow: 2px 2px 8px red;
+  }
+  /* styling the general look of each link under 'archives' */
+  .archives{
+    padding: 25px 25px;
+    border: 3px solid #61F08E;
+  }
+  .archives li{
+    line-height: 20px;
+  }
+  .archives li a{
+    display: block;
+  }
+  .archive-nav li {
+    float:left;
+    display: inline-block;
+    padding: 5px 20px;
+  }
+  li input{
+    float: left;
+  }
+  form{
+    width: 60%;
+
+  }
+  input{
+    background-color: #111;
+    color: #61F08E;
+    font-family: wwdig;
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+  }
+   textarea, select {
+    background-color: #111;
+    color: #61F08E;
+    font-family: wwdig;
+    margin: 10px;
+    font-size: 20px;
+    resize: vertical;
+    border: 2px solid #61f08e
+  }
+  input value{
+    color: #61F08E;
+    font-family: wwdig;
+    font-size: 20px;
+  }
+  input:hover{
+    color: red;
+  }
+  input:focus, textarea:focus, select:focus{
+    box-shadow: 2px 2px 10px red;
+    color: red;
+    border: 2px solid red;
+  }
+  /* video formatting for the website */
+  video {
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+/* styling and creating the footer */
+footer{
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  background-color: #111;
+  margin-top: 20px;
+  overflow: hidden;
+  border-top: 2px solid #61f08e
+}
+.footer-special{
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  background-color: #111;
+  margin-top: 20px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+.footer-dt{
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  background-color: #111;
+  margin-top: 20px;
+  overflow: hidden;
+  position: absolute !important;
+  bottom: 1px;
+}
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+footer ul li{
+  display: block;
+  list-style: none
+}
+footer ul li a{
+  text-decoration: none;
+  color: #61F08E;
+  font-family: wwdig;
+  display: block;
+  padding: 0 25px;
+  font-size: 20px;
+  line-height: 37px;
+
+}
+/* img formatting */
+.footer-sm{
+  width: 60px;
+  float: right;
+/*  padding-top: 20px;*/
+}
+.footer-sm img {
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
