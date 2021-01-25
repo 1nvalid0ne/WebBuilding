@@ -1,0 +1,269 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    color: black;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* MY FORMATTING */
+/* pseudo classes can be defined with a colon before them, like :hover */
+:root{
+  --text-color: #cccccc;
+  /* thats how you define a varible */
+}
+
+h1 {
+  /* you can also define varibles in div's, sections, headers, etc */
+  color: var(--text-color); /* how to call a varible*/
+  font-size: 40px;
+  text-align: center;
+  font-style: italic;
+  font-family: "Times new roman";
+}
+p {
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  font-style: normal;
+  font-family: "times new roman"
+  text-indent: 25px;
+}
+h2 {
+  color: grey;
+  font: arial
+  text-align: center;
+  font-size: 28px;
+}
+/* how to style an id in css */
+#sample {
+  color: red;
+  text-size: 28px;
+  text-align: center;
+}
+.index-h1 {
+  color: blue;
+  text-align: center;
+
+}
+.h2-separate {
+  color: red;
+  font-size: 55px;
+
+}
+.woah {
+  text-size: 70px
+  color: blue;
+
+}
+.sketchy {
+  color: purple;
+  font-size: 35px
+  font: arial
+
+}
+.red {
+  color: red;
+  text-size: 70px
+  font-weight: bolder;
+  font-style: italic;
+  line-height: 35px;
+}
+.joecoolbackstep {
+  text-size: 16px;
+}
+h3 {
+  text-align: center;
+  color: grey;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-variant: small-caps;
+}
+.money {
+  font-size: 55px;
+  color: green;
+  font-weight: 600;
+font-style: italic;
+text-align: center;
+text-decoration: underline;
+text-transform: uppercase;
+}
+html {
+background-color:black;
+}
+
+ul {
+float: left;
+
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 60px;
+  position: relative;
+}
+ul li a {
+text-decoration: none;
+display:block;
+color: white;
+font-size: 17px;
+font-family: cursive;
+padding: 0 20px;
+text-align: center;
+}
+nav ul li ul{
+display: none;
+position: absolute;
+background-color: orange;
+padding: 2px;
+border-radius:0px 0px 4px 4px;
+}
+nav ul li:hover ul{
+  display: block;
+}
+nav ul li ul li{
+  width: 180px;
+  border-radius: 4px;
+}
+nav ul li ul li a{
+  padding: 8px 4px;
+
+}
+nav ul li ul li a:hover{
+  background-color: grey;
+
+}
+ul li a:hover {
+color: blue;
+display: block;
+}
+
+.menus {
+  width: 100%;
+  height: 100px;;
+  background-color: orange;
+  outline-color: invert;
+}
+nav {
+  text-decoration: underline;
+  text-align: center;
+}
+a:hover {
+  color: #59F56B;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+
+}
+.index-intro {
+  color: red;
+  font-size: 10px;
+
+}
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../1nvalid0ne.online/images/141_Narmaya_4KDesktop_V04.jpg);
+}

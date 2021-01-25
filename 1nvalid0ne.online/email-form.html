@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <title>Email Form</title>
+  </head>
+  <body>
+    <!-- menus -->
+    <header>
+      <a href="index.html" class="header-brand">1nvalid0ne</a>
+      <nav>
+        <ul>
+          <li> <a href="about.html">About</a></li>
+            </li>
+          <li> <a href="#">Find Me @:</a>
+            <ul>
+              <li><a href="https://github.com/1nvalid0ne/" target="_blank">GitHub</a> </li>
+              <li><a href="https://twitter.com/creamyhetero" target="_blank">Twitter</a> </li>
+              <li><a href="https://discord.gg/QMCTrVEWhB" target="_blank">Discord</a> </li>
+              <li><a href="mailto:memedmonstrosity@gmail.com">Email Me!</a> </li>
+            </ul>
+          </li>
+          <li><a href="#">Jump To...</a>
+            <ul>
+              <li><a href="docs.html">Documents</a> </li>
+              <li><a href="images.html">Images</a> </li>
+              <li><a href="videos.html">Videos</a> </li>
+              <li><a href="forms.html">Forms</a> </li>
+              <li><a href="version-log.md">Versions</a> </li>
+              <li><a href="wf-info.html">Web-Forum</a> </li>
+              <li><a href="#bottom">Go Down</a> </li>
+            </ul>
+          </li>
+        </ul>
+          <a href="https://github.com/1nvalid0ne?tab=repositories" class="header-link" target="_blank">Projects</a>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper">
+    <h2>Email Form</h2>
+    <form class="email-form" action="contact.php" method="post">
+      <input type="text" name="email" placeholder="Enter your email:">
+      <select class="email-select" name="subject">
+        <option value="unspecified">Subject</option>
+        <option value="other">Other</option>
+        <option value="Error">Error</option>
+        <option value="Feedback">Feedback</option>
+      </select>
+      <textarea name="message" rows="8" cols="80" placeholder="Enter your message..."></textarea>
+  <!--    <p>Male: <input type="radio" name="gender" value="Male"></p>
+    <p>Female:<input type="radio" name="gender" value="Female"></p>
+    <p>Other:<input type="radio" name="gender" value="Other" checked> </p>-->
+    <input type="submit" name="submit" onclick="mailto:memedmonstrosity@gmail.com">
+    </form>
+  </div>
+    </main>
+    <!-- site footer -->
+    <footer class="footer-special">
+      <ul class="footer-m1">
+        <!-- creating a menu in the footer -->
+        <li> <a href="about.html">About</a></li>
+        <li> <a href="contact.html">Contact</a></li>
+        <li> <a href="https://github.com/1nvalid0ne?tab=repositories" target="_blank">Projects</a></li>
+        <li> <a href="wf-info.html">Web Forum</a></li>
+        <li><input type="button" value="<|>Go Back" onclick="history.back()"></li>
+      </ul>
+
+      <ul class="footer-m2">
+        <!-- creating a menu in the footer -->
+
+        <li class="footer-m2-head" id="bottom">Recent Projects</li>
+        <li> <a href="https://github.com/1nvalid0ne/2021JavaProject/" target="_blank">2021 JavaProject</a></li>
+        <li> <a href="https://github.com/1nvalid0ne/1nvalid0ne.-domain-/" target="_blank">Website Engineering</a></li>
+        <li><a href="wf-info.html">Forum Development</a> </li>
+      </ul>
+      <div class="footer-sm">
+        <a href="https://discord.gg/QMCTrVEWhB" target="_blank">
+          <img src="images/discordlogo.jpeg" alt="Discord icon">
+        </a>
+        <a href="https://twitter.com/creamyhetero" target="_blank">
+          <img src="images/twitterlogo.jpeg" alt="Twitter icon">
+        </a>
+        <a href="https://github.com/1nvalid0ne/" target="_blank">
+          <img src="images/ghlogo.jpeg" alt="GitHub icon">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

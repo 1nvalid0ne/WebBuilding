@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+/*wrapper styling*/
+.wrapper{
+width: 100%;
+}
+.indexbanner{
+display: none;
+}
+.indeximg-1{
+width: 100%;
+}
+.img-info{
+  width: 100%;
+
+}
+.img-info h2{
+  padding: 30px 30px 20px;
+  font-family: fantasy;
+  font-size: 50px;
+  color: #111;
+  line-height: 45px;
+}
+.img-info p{
+  padding: 0px 30px 20px;
+  font-family: fantasy;
+  font-size: 16px;
+  color: #111;
+  line-height: 24px;
+}
+@media only screen and (min-width: 768px) {
+
+}

@@ -1,0 +1,96 @@
+/* general formatting */
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  background-color: black;
+}
+@font-face {
+  src: url(fonts/tw.ttf);
+  font-family: tw;
+}
+@font-face {
+  src: url(fonts/xmi.ttf);
+  font-family: xmi;
+}
+@font-face {
+  src: url(fonts/apr.ttf);
+  font-family: apr;
+}
+/* navbar formatting */
+.navbar{
+  background-color: #1c1c1c;
+  position: sticky;
+}
+.navbar ul li{
+  padding: 2px 10px;
+}
+.navbar ul li a:hover{
+  color: #fff;
+}
+.navbar abbr{
+  text-decoration: none;
+}
+.navbar-brand img{
+  width: 100px;
+}
+.nav-item{
+  color: #fff;
+}
+.dropdown-menu{
+  background-color: #1c1c1c;
+}
+.dropdown-item{
+  color: #fff;
+}
+.dropdown-item:hover{
+  background-color: #777;
+}
+/* header formatting */
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/banner.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+}
+#header .vert-cent{
+  display: table-cell;
+  vertical-align: middle;
+}
+#header h2{
+  font-family: tw;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+  line-height: 100px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#header p{
+  font-family: tw;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+  line-height: 50px;
+  text-decoration: none;
+}
+#header h3{
+  font-family: xmi;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+  line-height: 75px;
+  text-decoration: underline;
+}
+/* body section formatting */
+#body{
+  background-color: #1c1c1c;
+}
+/* footer formatting */

@@ -1,0 +1,50 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 500px 500px 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "title title" /*insert the name twice because we have two columns*/
+  "header header"
+  "sidebar sidebar"
+  "content content"
+  "footer footer";
+  grid-gap: 10px;
+}
+.title{
+  grid-area: title;
+}
+.header{
+  grid-area: header;
+}
+.sidebar{
+  grid-area: sidebar;
+}
+.content{
+  grid-area: content;
+  /* align-self: use to move items vertically */
+}
+.footer{
+  grid-area: footer;
+}
+.grid div:nth-child(even){
+  background-color: red;
+}
+.grid div:nth-child(odd){
+  background-color: blue;
+}
+@media screen and (min-width: 736px){
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". title title ." /*insert the name twice because we have two columns*/
+    ". header header ."
+    ". sidebar content ."
+    ". footer footer ."
+  }
+}
