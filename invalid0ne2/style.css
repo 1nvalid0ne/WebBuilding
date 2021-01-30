@@ -24,13 +24,20 @@ html{
 .big{
   width: 150px;
 }
-.container{
-  padding: 25px;
-}
 audio{
   padding: 10px;
   background-color: #111;
 }
+/* doin some media shit */
+              @media only screen and (max-width: 650px){
+                main #body1 .cards{
+                  display: none;
+                }
+                .navbar-brand{
+                  padding: 0;
+                }
+              }
+              /* no more media stuff */
 /* formatting and adding fonts */
 @font-face{
   src: url(fonts/d3dig.ttf);
@@ -61,8 +68,6 @@ audio{
 #nav-bar{
     background-color: #111;
     border-bottom: 2px solid #61F08E;
-    display: inline-block;
-    width: 100%;
 }
 #nav-bar .nav-link:hover{
   color: red;
@@ -72,7 +77,6 @@ audio{
   color: red;
   text-decoration: underline;
 }
-/* ============ desktop view .end// ============ */
 
 .dropdown-menu{
     background-color: #111;
@@ -106,11 +110,11 @@ audio{
   color: #61F08E;
 }
 #nav-bar ul li a{
-     font-family: wwdig;
+  font-family: wwdig;
   font-size: 17px;
   color: #61F08E;
   display: block;
-    padding-top: 20px;
+  padding-top: 20px;
 }
 .dropdown-item{
     font-family: wwdig;
@@ -164,6 +168,7 @@ main{
 /*#body1 h2, p, h3*/ .container{
   background-color: #111;
   background-size: contain;
+  padding:25px;
 }
 .card .nav-link{
   font-family: wwdig;
@@ -176,6 +181,15 @@ main{
 }
 
 main .btn-primary{
+  box-shadow: none;
+  border: 2px solid #61F08E;
+  padding: 8px 25px;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #111, #111);
+  font-family: wwdig;
+  color: #61F08E;
+}
+#footer .btn-primary{
   box-shadow: none;
   border: 2px solid #61F08E;
   padding: 8px 25px;
@@ -228,5 +242,10 @@ h2{
 }
 /* footer styling */
 #footer{
+  border-top: 2px solid #61F08E;
   background-color: #111
+/*  border-top: 2px solid #61F08E;*/
+}
+#footer ul li{
+  list-style: none;
 }
