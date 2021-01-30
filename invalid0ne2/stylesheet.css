@@ -321,27 +321,6 @@ header .header-brand{
         }
         header nav ul li{
           margin: 0 auto;
-          position: relative;
-        }
-        header nav ul li ul{
-          padding-left: 20px;
-          padding: 2px;
-          display: none;
-          position: absolute;
-          padding: 8px;
-          background-color: #111;
-          border-radius:0px 0px 4px 4px;
-        }
-        header nav ul li:focus ul {
-          display: block;
-          margin: 0 auto;
-        }
-        header nav ul li ul li{
-          width: 100px;
-          padding: inherit;
-        }
-        header nav ul li ul li a{
-          padding: 6px;
         }
         .back-header{
           display: none;

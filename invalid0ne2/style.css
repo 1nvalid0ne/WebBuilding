@@ -5,7 +5,32 @@
 html{
     background-color: black;
 }
-
+.icon{
+    width: 60px;
+    background-color: #111;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+.bigger{
+    width: 80px;
+}
+.smaller{
+    width: 60px;
+}
+.smallest{
+  width: 40px;
+  padding-bottom: 10px;
+}
+.big{
+  width: 150px;
+}
+.container{
+  padding: 25px;
+}
+audio{
+  padding: 10px;
+  background-color: #111;
+}
 /* formatting and adding fonts */
 @font-face{
   src: url(fonts/d3dig.ttf);
@@ -16,7 +41,7 @@ html{
   font-family: digfireb;
 }
 @font-face {
-  src: url(fonts/wwDigital.ttf);
+  src: url(fonts/wwDigital.ttf);    border-right: 1px solid #61F08E;
   font-family: wwdig;
 }
 @font-face {
@@ -24,7 +49,7 @@ html{
   font-family: MHbody;
 }
 @font-face {
-  src: url(fonts/digcoll.ttf);
+  src: url(fonts/digcoll.ttf);    border-right: 1px solid #61F08E;
   font-family: digcoll;
 }
 @font-face{
@@ -35,8 +60,20 @@ html{
 /* formatting the navigation fo the site*/
 #nav-bar{
     background-color: #111;
-    height: fit-content;
+    border-bottom: 2px solid #61F08E;
+    display: inline-block;
+    width: 100%;
 }
+#nav-bar .nav-link:hover{
+  color: red;
+  text-decoration: underline ;
+}
+#nav-bar .dropdown-item:hover{
+  color: red;
+  text-decoration: underline;
+}
+/* ============ desktop view .end// ============ */
+
 .dropdown-menu{
     background-color: #111;
     border: 1px solid red;
@@ -45,17 +82,35 @@ html{
   font-family: wwdig;
   font-size: 50px;
   color: #61F08E;
+  padding: 10px 5px;
+  padding-right: 20px;
+  text-indent: none;
 }
+.up-some{
+    padding-bottom:10px;
+}
+
+/*
+.brand-image{
+    width: 75px;
+    height: 75px;
+    border-radius:10px ;
+    border:2px solid #61F08E;
+}
+.brand-image:hover{
+    border:2px solid red;
+}
+*/
 .navbar-brand:hover{
  text-shadow: 2px 2px 8px red;
+  color: #61F08E;
 }
 #nav-bar ul li a{
      font-family: wwdig;
   font-size: 17px;
   color: #61F08E;
   display: block;
-    border-right: 1px solid #61F08E;
-
+    padding-top: 20px;
 }
 .dropdown-item{
     font-family: wwdig;
@@ -67,21 +122,23 @@ html{
 }
 /*formatting the banner and header of the site*/
 #header{
-    
+
 }
 
 .head-banner{
   width: 100%;
-  height: calc(100vh);
+  height: 100vh;
   background-image: url('images/site-banner.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: table;
+  border-bottom: 2px solid #61F08E;
 }
 .vert-cent{
-      display: table-cell;
+  display: table-cell;
   vertical-align: middle;
+  width: 80%;
 }
 .head-banner h2{
   font-family: digcoll;
@@ -92,4 +149,84 @@ html{
   line-height: 100px;
   text-transform: uppercase;
   text-decoration: none;
+}
+/* styling the fist body section*/
+main{
+    background-color :#111;
+    background-image: url('images/div.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    padding: 20px 10px;
+}
+/*#body1 h2, p, h3*/ .container{
+  background-color: #111;
+  background-size: contain;
+}
+.card .nav-link{
+  font-family: wwdig;
+  color: #61F08E;
+}
+.nav-pills .active{
+  background-image: linear-gradient(to right, #111, #111);
+  border: 2px solid red;
+  text-shadow: 2px 2px 8px red;
+}
+
+main .btn-primary{
+  box-shadow: none;
+  border: 2px solid #61F08E;
+  padding: 8px 25px;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #111, #111);
+  font-family: wwdig;
+  color: #61F08E;
+}
+main .card{
+  background-color: #111;
+}
+main .body-card{
+  background-color: #111;
+  border: 2px solid #61F08E;
+  height: fit-content;
+  padding: 10px;
+}
+main .btn-primary:hover{
+  border: 2px solid red;
+  text-shadow: 2px 2px 8px red;
+}
+h4{
+  font-family: d3dig;
+  font-style: italic;
+  color: #61F08E;
+  display: block;
+  font-size: 35px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+h2{
+  font-family: wwdig;
+  font-style: italic;
+  color: #61F08E;
+  display: block;
+  font-size: 28px;
+  text-decoration: underline;
+  padding: 10px;
+}
+ p{
+  padding: 10px;
+  font-family: MHbody, sumstyle;
+  color: #C3C9D6;
+  text-indent: 20px;
+  font-size: 20px;
+}
+.divider-image{
+    width: 100%;
+    height: 75%;
+}
+/* footer styling */
+#footer{
+  background-color: #111
 }
