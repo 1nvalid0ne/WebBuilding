@@ -1,2 +1,2 @@
-let info = "Song Credits: Little Root town theme from Pokemon generation 3! ";
+let info = "Song Credits: LittleRoot town theme from Pokemon Gen 3! Turn off autoplay on your browser if you don't want the song playing. ";
 alert(info);
