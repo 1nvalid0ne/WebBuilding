@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+* .dropdown-item:focus{
+  background-color:  #111;
+  color: #61F08E;
+}
 html{
     background-color: black;
 }
@@ -244,6 +248,17 @@ h4{
   padding: 10px;
   text-transform: uppercase;
 }
+h3{
+  padding: 0px;
+}
+h3 a{
+  font-family: wwdig;
+  color: #61F08E;
+  font-size: 18px;
+}
+h3 a:hover{
+  color: red;
+}
 h2{
   font-family: wwdig;
   font-style: italic;
@@ -283,6 +298,10 @@ h2{
   border: 2px solid red;
   text-shadow: 2px 2px 8px red;
   text-decoration: none;
+}
+.archive-view{
+  padding: 2%;
+  border: 2px solid #61F08E;
 }
 /* footer styling */
 #footer{
