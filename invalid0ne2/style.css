@@ -36,6 +36,9 @@ audio{
 audio:hover{
   border: 2px solid red;
 }
+.padding-top{
+  padding-top: 25px;
+}
 /* doin some media poopoo */
                   @media only screen and (max-width: 972px){
                     .icon-special{
@@ -249,7 +252,9 @@ h4{
   text-transform: uppercase;
 }
 h3{
-  padding: 0px;
+  font-family: wwdig;
+  color: #61F08E;
+  font-size: 18px;
 }
 h3 a{
   font-family: wwdig;
