@@ -120,8 +120,8 @@ audio:hover{
   padding-right: 20px;
   text-indent: none;
 }
-.up-some{
-    padding-bottom:10px;
+.spacing{
+    padding: 20px;
 }
 
 /*
@@ -228,6 +228,19 @@ main .btn-primary{
   font-family: wwdig;
   color: #61F08E;
 }
+main #fileUpload{
+  box-shadow: none;
+  border: 2px solid #61F08E;
+  padding: 15px;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #111, #111);
+  font-family: wwdig;
+  color: #61F08E;
+}
+main #fileUpload:hover{
+  border: 2px solid red;
+  color: red;
+}
 
 main .card{
   background-color: #111;
@@ -298,6 +311,7 @@ h2{
   padding: 10%;
   font-family: d3dig;
   text-decoration: none;
+  display: block;
 }
 .archive-header:hover{
   border: 2px solid red;
@@ -307,6 +321,31 @@ h2{
 .archive-view{
   padding: 2%;
   border: 2px solid #61F08E;
+}
+.archive-view-inline{
+  padding: 3%;
+  border: 2px solid #61F08E;
+  display: inline-block;
+}
+.gallery h3{
+  padding: 2%;
+}
+.archive-view-inline:hover{
+  border: 2px solid red;
+}
+/* form styling */
+.form-control{
+  background-color: #111;
+  font-family: wwdig;
+  color: #61F08E;
+  border: 1px solid #61F08E;
+}
+.form-control:focus{
+  background-color: #111;
+  font-family: wwdig;
+  color: red;
+  box-shadow: 2px 2px 8px red;
+  border: 1px solid red;
 }
 /* footer styling */
 #footer{

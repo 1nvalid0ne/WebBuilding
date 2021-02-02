@@ -69,9 +69,10 @@
 <!-- creating the body section-->
 <section id="body1">
   <div class="container text-center">
+    <img src="images/fire.gif" class="icon big" alt="">
       <div class="row">
         <div class="col-sm-12">
-          <h1>  <img src="images/mario.gif" class="icon" alt=""><b>About Me!</b>  <img src="images/mario.gif" class="icon" alt=""> </h1>
+          <h1><b>About Me!</b></h1>
         </div>
         <div class="col-sm-4">
           <img src="images/lion.gif" class="icon big" alt="">
@@ -105,7 +106,7 @@
 </main>
 <!--footer section-->
 <section id="footer">
-    <div class="container">
+    <div class="container" id="bottom">
       <div class="row text-center">
         <div class="col-sm-4">
             <h2>Jump To...</h2>
@@ -139,9 +140,9 @@
           <div class="col-sm-12">
           <h2>Audio Control</h2>
            <img src="images/mario.gif" class="icon smallest" alt="">
-            <audio autoplay controls loop>
-              <source src="audio/901LT.mp3" type="audio/mpeg">
-             </audio>
+           <audio autoplay controls="controls" loop id="audio1" onloadeddata="setHalfVolume()">
+             <source src="audio/901LT.mp3" type="audio/mpeg">
+            </audio>
           </div>
         </div>
     </div>

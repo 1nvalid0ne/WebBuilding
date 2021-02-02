@@ -69,13 +69,53 @@
 <!-- creating the body section-->
 <section id="body1">
   <div class="container text-center">
-
+    <img src="images/donate.gif" class="icon big" alt="">
+    <h1>Donate!</h1>
+    <form>
+      <div class="form-group">
+        <div class="row spacing">
+          <div class="col-sm-6 spacing">
+            <h3><label for="#email">Email</label></h3>
+            <input type="text" name="email-donate"class="form-control" id="email">
+          </div>
+          <div class="col-sm-6 spacing">
+            <h3><label for="#name">Name</label></h3>
+            <input type="text" name="name-donate" class="form-control" id="name">
+          </div>
+        </div>
+        <div class="row spacing text-center">
+          <div class="col-sm-4 spacing">
+          <h3><label for="#paypal">PayPal Username</label></h3>
+            <input id="paypal" type="text" name="paypal-handle" value="@" class="form-control">
+          </div>
+        </div>
+        <div class="row spacing">
+          <div class="col-sm spacing">
+            <h3><label for="#desc">Description</label></h3>
+            <textarea name="desc-donate" rows="6" cols="80" class="form-control" id="desc" value="Here ya go!"></textarea>
+          </div>
+          <div class="col-sm-3 spacing">
+            <h3><label for="#amt">Amount</label></h3>
+            <input type="text" class="form-control" name="donate-value" value="$" id="amt">
+            <section class="spacing">
+            <a href="thanks.html"><input type="button" name="donate-complete" value="Donate" class="btn btn-primary"></a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>STOP! Before You Donate...</h2>
+        <p>When donating, if the form doesn't work, you can always donate elsewhere. I'll have a link to my patreon when I make one. Thank you for even clicking on this page though. It's the thought that counts right? You'll get a confrmation email whether it went through or not. It's via PayPal.</p>
+      </div>
+    </div>
   </div>
 </section>
 </main>
 <!--footer section-->
 <section id="footer">
-    <div class="container">
+    <div class="container" id="bottom">
       <div class="row text-center">
         <div class="col-sm-4">
             <h2>Jump To...</h2>
@@ -109,9 +149,9 @@
           <div class="col-sm-12">
           <h2>Audio Control</h2>
            <img src="images/mario.gif" class="icon smallest" alt="">
-            <audio autoplay controls loop>
-              <source src="audio/901LT.mp3" type="audio/mpeg">
-             </audio>
+           <audio autoplay controls="controls" loop id="audio1" onloadeddata="setHalfVolume()">
+             <source src="audio/901LT.mp3" type="audio/mpeg">
+            </audio>
           </div>
         </div>
     </div>

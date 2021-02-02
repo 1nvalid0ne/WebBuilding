@@ -100,7 +100,8 @@
       <div class="col-sm-6">
         <img src="images/ugknuck.gif" class="icon big" alt="">
         <h2>Why would I do this?</h2>
-        <p>Again. kinda flexing. But, I do like to give the opportunity to give everyone access to anything they see on the site that piques their interest.</p>
+        <p>Again. kinda flexing. But, I do like to give the opportunity to give everyone access to anything they see on the site that piques their interest. Also you can upload your own files. Below!</p>
+        <a href="upload.html" class="btn btn-primary" type="button">Upload!</a>
       </div>
     </div>
   </div>
@@ -108,7 +109,7 @@
 </main>
 <!--footer section-->
 <section id="footer">
-    <div class="container">
+    <div class="container" id="bottom">
       <div class="row text-center">
         <div class="col-sm-4">
             <h2>Jump To...</h2>
@@ -142,9 +143,9 @@
           <div class="col-sm-12">
           <h2>Audio Control</h2>
            <img src="images/mario.gif" class="icon smallest" alt="">
-            <audio autoplay controls loop>
-              <source src="audio/901LT.mp3" type="audio/mpeg">
-             </audio>
+           <audio autoplay controls="controls" loop id="audio1" onloadeddata="setHalfVolume()">
+             <source src="audio/901LT.mp3" type="audio/mpeg">
+            </audio>
           </div>
         </div>
     </div>

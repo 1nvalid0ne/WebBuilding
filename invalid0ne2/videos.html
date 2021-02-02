@@ -76,13 +76,11 @@
     </div>
     <div class="row archive-view">
       <div class="col-sm-3">
-        <h3><a href="#">+</a></h3>
-        <h3><a href="#">+</a></h3>
-        <h3><a href="#">+</a></h3>
-        <h3><a href="#">+</a></h3>
-        <h3><a href="#">+</a></h3>
+        <!--<h3><a href="#">+</a></h3>-->
+        <p>There's nothing here! </p>
       </div>
     </div>
+
     <div class="row">
       <div class="col-sm">
         <h3 class="padding-top"><a href="archive.html"><|>Archive</a> <a href="index.html"><|>Home</a></h3>
@@ -93,7 +91,7 @@
 </main>
 <!--footer section-->
 <section id="footer">
-    <div class="container">
+    <div class="container" id="bottom">
       <div class="row text-center">
         <div class="col-sm-4">
             <h2>Jump To...</h2>
@@ -127,9 +125,9 @@
           <div class="col-sm-12">
           <h2>Audio Control</h2>
            <img src="images/mario.gif" class="icon smallest" alt="">
-            <audio autoplay controls loop>
-              <source src="audio/901LT.mp3" type="audio/mpeg">
-             </audio>
+           <audio autoplay controls="controls" loop id="audio1" onloadeddata="setHalfVolume()">
+             <source src="audio/901LT.mp3" type="audio/mpeg">
+            </audio>
           </div>
         </div>
     </div>

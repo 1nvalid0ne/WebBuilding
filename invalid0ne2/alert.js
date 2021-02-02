@@ -1,2 +1,2 @@
-let info = "Song Credits: LittleRoot town theme from Pokemon Gen 3! Turn off autoplay on your browser if you don't want the song playing. ";
-alert(info);
+let credits = "Song by: Blip Stream Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 3.0 License"
+alert(credits);
